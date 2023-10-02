@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Respon Nav</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      color: white;
+      list-style: none;
+    }
+
+    .nav {
+      background-color: black;
+      color: white;
+      font-size: 27px;
+      padding: 30px;
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    .navlink {
+      width: 50%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .menu,
+    .navlink2 {
+      display: none;
+    }
+
+
+
+
+
+
+    @media (max-width: 576px) {
+      body {
+        background-color: hotpink;
+      }
+
+      .navlink>a {
+        display: none;
+      }
+
+      .menu {
+        display: inline;
+      }
+
+      .menu:hover {
+        outline: 3px solid cyan;
+        outline-offset: 9px;
+      }
+
+      .navlink2 {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+      }
+
+      .navlink2 {
+        position: absolute;
+        right: 0;
+        top: 93px;
+        background-image: linear-gradient(to bottom, black, darkcyan, red, navy, green);
+        border-radius: 21px 0px 0px 21px;
+        outline: 2px solid black;
+      }
+
+      .navlink2>a {
+        padding: 36px;
+      }
+
+      .navlink2>a:hover {
+        color: black;
+        text-shadow: 2px 2px 5px black, 2px 2px 5px turquoise, 2px 2px 1px green, 2px 2px 9px white;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="nav">
+
+    <div class="logo">
+      <span>Va9bhav😎</span>
+    </div>
+
+    <div class="navlink">
+      <a href="">HTML</a>
+      <a href="">CSS</a>
+      <a href="">JAVA SCRIPT</a>
+    </div>
+
+    <div class="menu">
+
+      <details>
+
+        <summary>☰</summary>
+
+        <div class="navlink2">
+          <a href="">HTML</a>
+          <a href="">CSS</a>
+          <a href="">JAVA SCRIPT</a>
+        </div>
+
+      </details>
+
+    </div>
+  </div>
+
+</body>
+</html>
