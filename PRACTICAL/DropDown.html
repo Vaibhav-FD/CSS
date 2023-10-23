@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drop Down</title>
+  <style>
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 27px;
+    color-scheme: dark;
+  }
+
+  .navbar{
+    padding-inline: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dropdown{
+    display: flex;
+  }
+
+  .dropdown span{
+    color: lime;
+    font-size: 21px;
+  }
+ 
+  .dropdown>li{
+    margin-inline: 90px ;
+    padding: 30px;
+    position: relative;
+  }
+  
+  #ddlist>li ,.ddlist2>li,.tta>li{
+    padding-block: 9px;
+    border: 1px solid hotpink;
+  }
+
+  #ddlist{
+    position: absolute;
+    top: 81px;
+    left: 30px;
+    display: none;
+  }
+
+  #ddlist>li:hover,.ddlist2 li:hover{
+    background-color: rgba(250, 96, 96, 0.833);
+  }
+  
+  .dropdown>:nth-child(2):hover #ddlist{
+    display: block;
+    
+  }
+
+
+
+
+  .ddlist2{
+    position: relative;
+  }
+
+  .tta{
+    display: none;
+    position: absolute;
+    left: 114px; 
+    top:0;
+  }
+
+
+  .ddlist2:hover .tta{
+    display: block;
+  }
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <span>VA9BHAV</span>
+      
+      <ul class="dropdown">
+        <li>HTML</li>
+        <li>CSS <span>︾</span>
+
+          <ul id="ddlist">
+            <li>Ways</li>
+            <li>Selector</li>
+            <li>Box Model</li>
+            <li>Properties</li>
+            <li>Flexbox</li>
+
+
+            <div class="ddlist2">
+
+            <li>TTA  <span>➥</span>
+
+              <ul class="tta">
+                <li>Transform</li>
+                <li>Transition</li>
+                <li>Animation</li>
+              </ul>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+        </li>
+        <li>JAVA SCRIPT</li>
+      </ul>
+    </nav>
+  </header>
+  
+</body>
+</html>

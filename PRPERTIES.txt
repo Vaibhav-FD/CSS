@@ -1,0 +1,37 @@
+Least Used-♣
+
+accent-color = GIVE COLOR TO THE	       	       FORM VALIDATION INPUTS.
+
+backdrop-filter = GIVE FILTER TO BACKGROUND.
+
+background-blend-mode = GIVE FILTER TO 					BACKGROUND IMAGE.
+
+caret-color = CURSOR BLINK COLOR.
+
+cursor = TO CHANGE THE CORSOR.
+
+filter = TO APPLY FILTER OVERALL.
+
+font-stretch = STRECH SOME FONTS NOT ALL ALSO 	       CHECK THE BROWSER COMP.
+
+image-rendering = TO CHOOSE LIKE HOW TO 	          		  RENDER IMAGE.
+
+mix-blend-mode = GIVE FILTER TO NORMLA IMAGE.
+
+object-fit = LIKE BACKGROUND SIZE BUT BETTER.
+
+perspectie           +
+perspective-origin  = USED TO VIEW 3D ANGEL.
+
+
+resize = TO GIVE RESIZING ABILLITY TO ELEMENT.
+
+text-emphasis
+
+transform-origin	
+transform-style
+
+user-select = WE CAN DECEIDE WHETHER USE CAN 		      SELECT THE TEXT OR NOT
+
+writing-mode
+text-decoration
