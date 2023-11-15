@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color-scheme: dark;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    .box {
+      width: 19%;
+      height: 21%;
+      background-color: limegreen;
+      font-size: 2.25rem;
+      border: 5px solid hotpink;
+      animation-name: ani1;
+      animation-duration: 3000ms;
+    }
+
+
+    @keyframes ani1 {
+      from {
+        background-color: lime;
+        border: 5px solid hotpink;
+
+      }
+
+      to {
+        background-color: blue;
+        border: 9px dashed whitesmoke;
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">Animation BOX</div>
+</body>
+
+</html>
