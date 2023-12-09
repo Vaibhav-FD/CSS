@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders</title>
+
+    <style>
+
+    /*BORDER STYLE IS USED TO GIVE BORDER TO ELEMENT THERE ARE SO MANY VALUES IN THIS SOLID , DASHED , DOTTED , DOUBLE , RIDGE , GROOVE , INSET , OUTSET , HIDDEN , NONE   */
+
+        p.bs{
+            border-style: solid;    
+        }
+        
+        p.mx{
+            
+            border-style: dashed solid dotted double;
+            /* THE SEQUENCE IS TOP RIGHT BOTTOM LEFT */
+            /* SAME APPLY FOR BORDER COLOR AND WIDTH */
+
+        }
+
+         p.mx1{
+            border-style: solid dashed double;
+            /* THE SEQUENCE IS TOP LEFT & RIGHT BOTTOM */
+            /* SAME APPLY FOR BORDER COLOR AND WIDTH */
+
+         }
+
+         p.mx2{
+            border-style: ridge dotted;
+            /* THE SEQUENCE IS TOP & BOTOTM LEFT & RIGHT */
+            /* SAME APPLY FOR BORDER COLOR AND WIDTH */
+
+         }
+
+
+         /* BORDER COLOR IS USED TO GIVE COLOR TO THE BORDER */
+
+         p.bc{
+            border-style: solid;
+            border-color: blue;
+         }
+
+         /* BORDER WIDTH IS USED TO GIVE WIDTH OR THICKNESS OF BORDER */
+
+         p.wi{
+            border-style: solid;
+            border-width: 9px;
+            border-color: aquamarine;
+            
+         }
+
+         /* BORDER SHORT HAND PROPETY */
+
+         p.sh{
+            border: 3px solid green ;
+            /* THE ORDER OF THIS SHORT HAND PROPETY IS === WIDTH STYLE COLOR 
+            THIS IS MOSTLY USED PROPETY */
+         }
+
+/* NOTE == WE CAN SPECIFY THE DIRECTION OF EVERY BORDER PROPETY LIKE LEFT ,RIGHT, TOP , BOTOTM*/
+
+         p.dir{
+            border-bottom: 3px solid aqua;
+            border-left: 2px dashed hotpink;
+         }
+
+
+         /* BORDER RADIUS IS USED TO GIVE CURVY AT CORNER */
+
+         p.radius{
+
+            border-style: solid;
+            border-width: 6px;
+            border-color: hotpink;
+            border-radius: 12px;
+
+            /* IN BORDER RADIUS THERE IS DIAGONAL DIRECTIONN LIKE TOP LEFT ,TOP RIGHT , BOTTOM LEFT , BOTTOM RIGHT  */
+
+         }
+
+        
+    </style>
+
+</head>
+
+<body>
+
+    <p class="bs">THIS IS BORDER STYLE WITH 1 VALUE</p>
+    <p class="mx">THIS IS MIXED STYLE</p>
+    <p class="mx1">THIS IS ALSO MIXED BUT WITH 3 VALUES</p>
+    <p class="mx2">THIS IS ALSO MIXED BUT WITH 2 VALUES</p>
+
+    <p class="bc">THIS IS BORDER WITH COLOR</p>
+
+    <p class="wi">THIS IS BORDER WIDTH</p>
+
+    <p class="sh">THIS IS SHORT HAND PROPERTY OF BORDER USE THIS OK</p>
+
+    <p class="dir">HIII</p>
+
+    <p class="radius">THIS IS BORDER WITH RADIUS</p>
+
+    
+</body>
+
+</html>
