@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,81 +8,83 @@
 </head>
 
 <style>
-.flexdabbo{
+  * {           /*THIS IS BASIC RESET*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
+  body {       /*THIS IS FOR BETTER APPREANCE*/
+    padding: 3rem;
+  }
 
-  height: 618px;
-  border: 3px soid red;
-  display: flex;
-  flex-direction: row;
-  /* flex-wrap:wrap; */
-  /* align-content: ; */
-  /* align-items: flex-end; */
-  /* justify-content: ; */
+  .parent {         /*I AM GIVING PARENT CONTAINER DISPLAY FLEX WITH FLEX-WRAP */
+    height: 450px;
+    border: 6px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+  }
 
+  .ITEM {
+    width: 24%;
+    height: 120px;
+    border: 6px solid green;
+  }
 
-}
+  .item1 {
+    background-color: slateblue;
+  }
 
-.fd1{
-  border: 2px solid green;
-  background-color: slateblue;
-  width:120px;
-  height: 90px;
-  /* align-self:center; */
-  /* flex-shrink: ; */
-  /* flex-grow: ; */
-  /* flex-basis: 1200px ; */
-}
+  .item2 {
+    background-color: pink;
 
-.fd2{
-  border: 2px solid green;
-  background-color: pink;
-  width:120px;
-  height: 90px;
-  
-}
+  }
 
-.fd3{
-  border: 2px solid green;
-  background-color: black;
-  width:120px;
-  height: 90px;
-}
+  .item3 {
+    background-color: black;
+    color: white;
+  }
 
-.fd4{
- border: 2px solid green;
-  background-color: turquoise;
-  width:120px;
-  height: 90px; 
-}
+  .item4 {
+    background-color: turquoise;
+  }
 
-.fd5{
- border: 2px solid green;
-  background-color: brown;
-  width:120px;
-  height: 90px; 
-}
+  .item5 {
+    background-color: brown;
+  }
 
-.fd6{
- border: 2px solid green;
-  background-color: yellow;
-  width:120px;
-  height: 90px; 
-}
+  .item6 {
+    background-color: yellow;
+  }
 
+  .item7 {
+    background-color: blueviolet;
+  }
+
+  .item8 {
+    background-color: khaki;
+  }
 </style>
+
 <body>
 
-  <div class="flexdabbo">
+  <div class="parent">
 
-    <div class="fd1">Dabbo1</div>
-    <div class="fd2">Dabbo2</div>
-    <div class="fd3">Dabbo3</div>
-    <div class="fd4">Dabbo4</div>
-    <div class="fd5">Dabbo5</div>
-    <div class="fd6">Dabbo6</div>
+    <div class="item1 ITEM">item1</div>
+    <div class="item2 ITEM">item2</div>
+    <div class="item3 ITEM">item3</div>
+    <div class="item4 ITEM">item4</div>
+    <div class="item5 ITEM">item5</div>
+    <div class="item6 ITEM">item6</div>
+    <div class="item7 ITEM">item7</div>
+    <div class="item8 ITEM">item8</div>
 
   </div>
-  
+
+
+
 </body>
+
 </html>
