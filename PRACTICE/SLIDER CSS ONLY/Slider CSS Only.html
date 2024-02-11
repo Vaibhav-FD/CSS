@@ -11,26 +11,32 @@
       box-sizing: border-box;
     }
     body{
-      background-color: #05180ee7;
+      background-color:#e3e1e1;
       color: white;
       position: relative;
-      /* border: 2px solid lime; */
     }
 
     .slider{
-      height: 81vh;
+      height: 90vh;
       width: 96%;
       border: 6px solid transparent;
       border-image: linear-gradient(120deg,navy,aqua,blueviolet)9;
       box-shadow: 0px 0px 39px 21px black;
       margin-inline: auto;
-      margin-top: 3.9rem;
+      margin-top: 3.6rem;
+    }
+    .box{
+      position: relative;
     }
     input{
       height: 27px;
       width: 27px;
       position: absolute;
       bottom: 4%;
+    }
+
+    input:hover{
+      cursor: pointer;
     }
 
     #first{
@@ -59,22 +65,38 @@
       background-image: url(IMAGES/IMG3.jpg);
       background-repeat: no-repeat;
       background-size: 100% 100%;
+    }
+
+    .tooltip{
+      position: absolute;
+      background-color: transparent;
+      padding: 1rem 2.1rem;
+      font-size: 1rem;
+      border-radius: 1rem;
+      word-spacing: 0.54rem;
+      letter-spacing: 0.09rem;
+      font-family: Arial, Helvetica, sans-serif;
+      border: 3px solid purple;
+      top: -4.5%;
+      left: 3.9%;
+      backdrop-filter: blur(21px);
+    }
    
+    .tooltip span{
+      color: lime;
+      font-size: 1.5rem;
     }
   </style>
 </head>
 <body>
 
-  <div class="box">
-
-    <input type="radio" name="slidebtn" id="first" checked>
-    <input type="radio" name="slidebtn" id="second">
-    <input type="radio" name="slidebtn" id="third">
-
-    <div class="slider"></div>
-
-  </div>
-
+  <input type="radio" name="slidebtn" id="first" checked autofocus>
+  <input type="radio" name="slidebtn" id="second">
+  <input type="radio" name="slidebtn" id="third">
   
+  <div class="slider"></div>
+  
+  <p class="tooltip">YOU CAN ALSO USE <span>⇛⇓</span> AND <span>⇚⇑</span> ARROW KEYS OF KEYBORD TO SLIDE.</p>
+
 </body>
 </html>
