@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider Only CSS</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background-color: #05180ee7;
+      color: white;
+      position: relative;
+      /* border: 2px solid lime; */
+    }
+
+    .slider{
+      height: 81vh;
+      width: 96%;
+      border: 6px solid transparent;
+      border-image: linear-gradient(120deg,navy,aqua,blueviolet)9;
+      box-shadow: 0px 0px 39px 21px black;
+      margin-inline: auto;
+      margin-top: 3.9rem;
+    }
+    input{
+      height: 27px;
+      width: 27px;
+      position: absolute;
+      bottom: 4%;
+    }
+
+    #first{
+      left: 43%;
+    }
+    #second{
+      left: 48%;
+    }
+    #third{
+      left: 53%;
+    }
+
+    #first:checked~div{
+      background-image: url(IMAGES/IMG1.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+
+    }
+    #second:checked~div{
+      background-image: url(IMAGES/IMG2.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+
+    }
+    #third:checked~div{
+      background-image: url(IMAGES/IMG3.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+   
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+
+    <input type="radio" name="slidebtn" id="first" checked>
+    <input type="radio" name="slidebtn" id="second">
+    <input type="radio" name="slidebtn" id="third">
+
+    <div class="slider"></div>
+
+  </div>
+
+  
+</body>
+</html>
